@@ -9,8 +9,9 @@
 			<%@include file="navbar.jsp" %>
 			<div class="container mt-5 pt-5">
 				<section>
-						<div id="app" class="d-flex pt-5 mt-5 justify-content-center align-items-center">
-							<div class="col-md-8 me-5">
+					<h1 class="fs-1 text-center">Dar de Alta</h1>
+						<div id="app" class="d-flex pt-5 mt-2 justify-content-center align-items-center">
+							<div class="col-md-6 me-5">
 								<div class="alta card p-1 shadow-lg">
 									<div class="card-header">
 										<h4 class="text-align">Agrega un producto</h4>
@@ -34,19 +35,27 @@
 											<label for="exampleFormControlTextarea1" class="col-form-label-lg ml-1">C&oacute;digo</label>
 											<input name="codigo" type="text" class="form-control" id="exampleFormControlTextarea1" maxlength="7">
 											</div>
-											<button class="btn btn-info btn-block w-100 text-light fs-3 fw-bold mt-2 shadow-lg" type="submit">
-												Dar de alta
-											</button>
+											<div class="text-center">
+												<button class="btn btn-info btn-block w-50 text-light fs-2 fw-bold mt-2 p-3 shadow-lg" type="submit"><i class="bi bi-plus-circle-fill"></i>
+												</button>
+											</div>
 										</form>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4">
-								<img src="./assets/img/agregar-paquete.png" alt="img-alta">
+							<div class="col-md-6">
+								<img class="img-fluid" src="./assets/img/agregar-paquete.png" alt="img-alta">
 							</div>
 						</div>
 				</section>
-				<p class="text-center fixed-bottom">&copy; GFC - 2022</p>
+				<section class="row text-center fixed-bottom mb-4">
+					<div class="col-md-6 p-1">
+						<a class="btn btn-danger bg-gradient btn-block fs-3 w-75 shadow-lg" href="<%=request.getContextPath()%>"><i class="bi bi-arrow-return-left"> Volver al Inicio</i></a>
+					</div>
+					<div class="col-md-6 p-1">
+						<a class="btn btn-danger bg-gradient btn-block fs-3 w-75 shadow-lg" href="<%=request.getContextPath()%>/api/ListadoController"><i class="bi bi-list-task"> Ir al Listado</i></a>
+					</div>
+				</section>
 			</div>
 		</main>
 

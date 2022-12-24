@@ -1,4 +1,9 @@
 
 .b-index {
-    background: linear-gradient(180deg, rgb(14, 99, 179), rgba(72, 219, 238, 0.692), rgba(116, 214, 238, 0.651), rgb(211, 246, 248));
+    background: linear-gradient(180deg, rgb(110, 4, 4), rgba(218, 8, 8, 0.795), rgb(240, 130, 130), rgba(255, 255, 255));
+}
+
+.icon-cac {
+    max-width: 4.5rem;
+    max-height: 4.5rem;
 }
