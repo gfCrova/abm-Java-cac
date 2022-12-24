@@ -5,7 +5,7 @@
 		<%@include file="head.jsp" %>	
 	</head>
 	
-	<body>
+	<body class="b-listado">
 		<!-- ACA VA EL NAVBAR  -->
 		<%@include file="navbar.jsp" %>
 		<main>

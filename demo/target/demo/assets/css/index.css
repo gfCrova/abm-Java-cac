@@ -1,3 +1,7 @@
+.b-index {
+  background: linear-gradient(120deg, rgb(241, 241, 241), rgb(211, 246, 248), rgba(72, 219, 238, 0.692));
+}
+
 .alta {
   animation: aparecer 0.5s forwards ease-in;
   transition: all 1s;
