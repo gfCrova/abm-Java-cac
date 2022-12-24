@@ -7,7 +7,7 @@
 		<main>
 			<!-- ACA VA EL NAVBAR  -->
 			<%@include file="navbar.jsp" %>
-			<div class="container">
+			<div class="container mt-5 pt-5">
 				<section>
 						<div id="app" class="d-flex pt-5 mt-5 justify-content-center align-items-center">
 							<div class="col-md-8 me-5">
