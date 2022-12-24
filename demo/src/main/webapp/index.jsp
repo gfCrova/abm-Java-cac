@@ -1,17 +1,20 @@
 <html>
-	<head>
-		<%@include file="head.jsp" %>	
-	</head>
-	
-	<body>
-		<!-- ACA VA EL NAVBAR  -->
-		<%@include file="navbar.jsp" %>		
+
+<head>
+	<%@include file="head.jsp" %>
+</head>
+
+<body class="bg-primary bg-gradient">
+	<!-- ACA VA EL NAVBAR  -->
+	<%@include file="navbar.jsp" %>
 		<main>
-			<div class="container">
+			<div class="container text-center text-light m-auto">
 				<section>
-					<h1>ABM de productos </h1>
+					<h1 class="mt-5 fs-1">ABM de productos </h1>
 				</section>
 			</div>
 		</main>
-	</body>	
+
+</body>
+
 </html>

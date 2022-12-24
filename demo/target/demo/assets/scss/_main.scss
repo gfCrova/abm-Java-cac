@@ -1,0 +1,18 @@
+
+.alta {
+    animation: aparecer 0.5s forwards ease-in;
+    transition: all 1s;
+}
+
+@keyframes aparecer {
+
+    0% { transform: scale(0.1)}
+    100% { transform: scale(1);}
+}
+
+
+@media (max-width: 768px) {
+    .alt {
+        margin-top: 3rem;
+    }
+}
