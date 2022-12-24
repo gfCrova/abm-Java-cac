@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark bg-gradient fixed-top">
   <div class="container-fluid">
-      <img class="icon-cac" src="./assets/img/codoacodo.png" alt="icon-cac">
+      <img class="icon-cac" src="assets/img/codoacodo.png" alt="icon">
       <a class="navbar-brand" href="<%=request.getContextPath()%>">Codo a Codo</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

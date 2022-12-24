@@ -2,19 +2,19 @@
 <%@page import="ar.com.codoacodo.dto.Producto"%>
 <html>
 	<head>
-		<%@include file="head.jsp" %>	
+		<%@include file="head.jsp"%>	
 	</head>
 	
-	<body style="background: linear-gradient(180deg, rgba(80, 66, 4, 0.897), rgba(141, 98, 6, 0.904), rgba(207, 162, 15, 0.911), rgba(235, 200, 84, 0.863), rgb(255, 255, 255));">
+	<body style="background: linear-gradient(90deg, rgba(155, 107, 5, 0.904), rgba(207, 162, 15, 0.911), rgba(235, 200, 84, 0.863), rgb(245, 230, 180), rgba(235, 200, 84, 0.863), rgba(207, 162, 15, 0.911), rgba(155, 107, 5, 0.904));">
 		<!-- ACA VA EL NAVBAR  -->
 		<%@include file="navbar.jsp" %>
 		<main class="mt-5 pt-5">
 			<div class="container">
-				<section>
-					<h1 class="text-light text-center mb-3">Listado</h1>
-					<table class="table">
-					  <thead class="text-light">
-					    <tr>
+				<h1 class="fs-1 text-center">LISTADO</h1>
+				<section class="overflow-auto">
+					<table class="table mt-5 ps-4">
+					  <thead>
+					    <tr class="fs-4">
 					      <th scope="col">ID</th>
 					      <th scope="col">NOMBRE</th>
 					      <th scope="col">PRECIO</th>
@@ -33,8 +33,8 @@
 					   <%
 					   	for( Producto  unProducto : listado) {
 					   %>
-					    <tr>
-					      <th scope="row"> <%=unProducto.getIdProducto()%> </th>
+					    <tr class="fs-4">
+					      <th scope="row" class="text-muted"> <%=unProducto.getIdProducto()%> </th>
 					      <td><%=unProducto.getNombre() %></td>
 					      <td><%=unProducto.getPrecio() %></td>
 					      <td><%=unProducto.getCodigo() %></td>
@@ -49,6 +49,16 @@
 					  </tbody>
 					</table>
 				</section>
+				<div class="container text-center fixed-bottom mb-4">
+					<div class="row">
+						<div class="col-md p-1">
+							<a class="btn btn-outline-dark bg-gradient bg-opacity-75 btn-block fs-3 w-50 shadow-lg" href="<%=request.getContextPath()%>/alta.jsp"><i class="bi bi-arrow-return-left"> Regresar a Alta</i></a>
+						</div>
+						<!--<div class="col-md-6 p-1">
+							<a class="btn btn-outline-dark bg-gradient bg-opacity-75 btn-block fs-3 w-75 shadow-lg" href="<%=request.getContextPath()%>"><i class="bi bi-house"> Inicio</i></a>
+						</div>-->
+					</div>
+				</div>
 			</div>
 		</main>
 	</body>	
