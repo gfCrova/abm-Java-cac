@@ -5,15 +5,15 @@
 		<%@include file="head.jsp" %>	
 	</head>
 	
-	<body>
+	<body style="background: linear-gradient(180deg, rgba(80, 66, 4, 0.897), rgba(141, 98, 6, 0.904), rgba(207, 162, 15, 0.911), rgba(235, 200, 84, 0.863), rgb(255, 255, 255));">
 		<!-- ACA VA EL NAVBAR  -->
 		<%@include file="navbar.jsp" %>
-		<main>
+		<main class="mt-5 pt-5">
 			<div class="container">
 				<section>
-					<h1>Listado</h1>
+					<h1 class="text-light text-center mb-3">Listado</h1>
 					<table class="table">
-					  <thead>
+					  <thead class="text-light">
 					    <tr>
 					      <th scope="col">ID</th>
 					      <th scope="col">NOMBRE</th>
