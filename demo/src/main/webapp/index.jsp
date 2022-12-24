@@ -13,7 +13,7 @@
 					<h1 class="mt-5 fs-1">ABM de productos </h1>
 				</section>
 			</div>
-			<p class="text-center text-light">&copy; GFC - 2022</p>
+			<p class="text-center text-light fixed-bottom">&copy; GFC - 2022</p>
 		</main>
 </body>
 
