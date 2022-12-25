@@ -46,9 +46,11 @@
 						  	value="<%=producto.getCodigo()%>" 
 						  	type="text" class="form-control" id="exampleFormControlTextarea1" maxlength="7">
 						</div>
-						<button class="btn btn-primary">
-							Grabar
-						</button>
+						<div class="container">
+							<button class="btn btn-primary w-100">
+								Guardar
+							</button>
+						</div>
 					</form>
 				</section>
 			</div>

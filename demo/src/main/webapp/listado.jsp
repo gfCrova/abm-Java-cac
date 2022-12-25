@@ -11,7 +11,7 @@
 		<main class="mt-5 pt-5">
 			<div class="container">
 				<h1 class="fs-1 text-center">LISTADO</h1>
-				<section class="overflow-auto">
+				<section>
 					<table class="table mt-5 ps-4">
 					  <thead>
 					    <tr class="fs-5">
@@ -51,16 +51,6 @@
 					  </tbody>
 					</table>
 				</section>
-				<div class="container text-center fixed-bottom mb-4">
-					<div class="row">
-						<div class="col-md p-1">
-							<a class="btn btn-outline-dark bg-gradient bg-opacity-75 btn-block fs-3 w-50 shadow-lg" href="<%=request.getContextPath()%>/alta.jsp"><i class="bi bi-arrow-return-left"> Regresar a Alta</i></a>
-						</div>
-						<!--<div class="col-md-6 p-1">
-							<a class="btn btn-outline-dark bg-gradient bg-opacity-75 btn-block fs-3 w-75 shadow-lg" href="<%=request.getContextPath()%>"><i class="bi bi-house"> Inicio</i></a>
-						</div>-->
-					</div>
-				</div>
 			</div>
 		</main>
 	</body>	

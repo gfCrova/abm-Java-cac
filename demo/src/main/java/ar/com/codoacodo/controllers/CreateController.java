@@ -29,7 +29,7 @@ public class CreateController extends HttpServlet {
 		ProductoDAO dao = new ProductoDAO();
 		
 		//ejecutar el metodo crearProducto(parametros...)
-		dao.crearProducto(nombre, modelo,Float.parseFloat(precio), imagen, codigo);
+		dao.crearProducto(nombre, modelo, Float.parseFloat(precio), imagen, codigo);
 		
 		//ctrl+shit+o
 		//ir a la siguiente pagina
