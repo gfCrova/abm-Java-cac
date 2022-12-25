@@ -10,7 +10,7 @@
 			<div class="container mt-5 pt-5">
 				<h1 class="fs-1 text-center">DAR DE ALTA</h1>
 					<div class="row">
-						<div id="app" class="d-flex pt-1 mt-2 justify-content-center align-items-center">
+						<div id="app" class="d-flex pt-1 mt-5 pt-5 justify-content-center align-items-center">
 							<div class="col-md-6 alta card p-1 shadow-lg">
 								<div class="card-header bg-danger bg-gradient">
 									<h4 class="text-align text-light">Agrega un Componente</h4>
@@ -44,16 +44,6 @@
 										</div>
 									</form>
 								</div>
-							</div>
-						</div>
-					</div>
-					<div class="container text-center fixed-bottom mb-4">
-						<div class="row">
-							<div class="col-md-6 p-1">
-								<a class="btn btn-outline-dark bg-gradient btn-block fs-3 w-75 shadow-lg" href="<%=request.getContextPath()%>"><i class="bi bi-arrow-return-left"> Inicio</i></a>
-							</div>
-							<div class="col-md-6 p-1">
-								<a class="btn btn-outline-dark bg-gradient btn-block fs-3 w-75 shadow-lg" href="<%=request.getContextPath()%>/api/ListadoController"><i class="bi bi-list-task"> Ir al Listado</i></a>
 							</div>
 						</div>
 					</div>
