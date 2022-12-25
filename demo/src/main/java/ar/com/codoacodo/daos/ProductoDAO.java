@@ -35,13 +35,14 @@ public class ProductoDAO {
 				// rs > sacando los datos
 				Long idProducto = rs.getLong(1);//tomar la primer columna
 				String nombre = rs.getString(2);
-				Float precio = rs.getFloat(3);
-				Date fecha = rs.getDate(4);
-				String imagen = rs.getString(5);
-				String codigo = rs.getString(6);
+				String modelo = rs.getString(3);
+				Float precio = rs.getFloat(4);
+				Date fecha = rs.getDate(5);
+				String imagen = rs.getString(6);
+				String codigo = rs.getString(7);
 				
 				//campos crear un objeto????
-				prodFromDb = new Producto(idProducto,nombre,precio,fecha,imagen,codigo);
+				prodFromDb = new Producto(idProducto,nombre,modelo,precio,fecha,imagen,codigo);
 			}			
 		} catch (SQLException e) {
 			// ERRORES
@@ -73,13 +74,14 @@ public class ProductoDAO {
 				// rs > sacando los datos
 				Long idProducto = rs.getLong(1);//tomar la primer columna
 				String nombre = rs.getString(2);
-				Float precio = rs.getFloat(3);
-				Date fecha = rs.getDate(4);
-				String imagen = rs.getString(5);
-				String codigo = rs.getString(6);
+				String modelo = rs.getString(3);
+				Float precio = rs.getFloat(4);
+				Date fecha = rs.getDate(5);
+				String imagen = rs.getString(6);
+				String codigo = rs.getString(7);
 				
 				//campos crear un objeto????
-				Producto prodFromDb = new Producto(idProducto,nombre,precio,fecha,imagen,codigo);
+				Producto prodFromDb = new Producto(idProducto,nombre, modelo,precio,fecha,imagen,codigo);
 				
 				//agrego a la lista 
 				list.add(prodFromDb);
@@ -95,14 +97,14 @@ public class ProductoDAO {
 	}
 
 	/*crear un producto en la db*/
-	public void crearProducto(String nombre, Float precio, String imagen, String codigo) {
+	public void crearProducto(String nombre, String modelo, Float precio, String imagen, String codigo) {
 		
 		Connection con = AdministradorDeConexiones.getConnection();
 		
 		if(con != null) { 
 			// insert en la db > SQL: INSERT INTO....
-			String sql = "INSERT INTO PRODUCTO (nombre, precio,fecha_creacion,imagen,codigo) ";
-			sql += "VALUES('"+nombre+"',"+precio+",	CURRENT_DATE,'"+imagen+"','"+codigo+"')";
+			String sql = "INSERT INTO PRODUCTO (nombre,modelo,precio,fecha_creacion,imagen,codigo) ";
+			sql += "VALUES('"+nombre+"','"+modelo+"',"+precio+",	CURRENT_DATE,'"+imagen+"','"+codigo+"')";
 			
 			//control de errores
 			try {
@@ -118,11 +120,12 @@ public class ProductoDAO {
 		}
 	}
 
-	public void actualizarProducto(String codigo, String nombre, String precio) {
+	public void actualizarProducto(String codigo, String nombre, String modelo, String precio) {
 		Connection con = AdministradorDeConexiones.getConnection();
 		if(con != null) { 
 			String sql = "UPDATE PRODUCTO "
 					+ " set nombre='"+nombre+"',"
+					+ " modelo='"+modelo+"',"
 					+ " precio='"+precio+"'"
 					+ " WHERE codigo = '"+codigo+"'"; 			
 		
@@ -160,13 +163,14 @@ public class ProductoDAO {
 				// rs > sacando los datos
 				Long idProducto = rs.getLong(1);//tomar la primer columna
 				String nombre = rs.getString(2);
-				Float precio = rs.getFloat(3);
-				Date fecha = rs.getDate(4);
-				String imagen = rs.getString(5);
-				String codigo = rs.getString(6);
+				String modelo = rs.getString(3);
+				Float precio = rs.getFloat(4);
+				Date fecha = rs.getDate(5);
+				String imagen = rs.getString(6);
+				String codigo = rs.getString(7);
 				
 				//campos crear un objeto????
-				Producto prodFromDb = new Producto(idProducto,nombre,precio,fecha,imagen,codigo);
+				Producto prodFromDb = new Producto(idProducto,nombre,modelo,precio,fecha,imagen,codigo);
 				
 				listado.add(prodFromDb);
 			}			

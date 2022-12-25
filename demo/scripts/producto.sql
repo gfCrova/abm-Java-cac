@@ -4,6 +4,7 @@ DROP TABLE IF EXISTS `producto`;
 CREATE TABLE `producto` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nombre` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `modelo` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `precio` float NOT NULL,
   `fecha_creacion` date NOT NULL,
   `imagen` varchar(100) COLLATE utf8mb4_spanish2_ci DEFAULT NULL,
@@ -16,11 +17,13 @@ SELECT * FROM `producto`;
 
 LOCK TABLES `producto` WRITE;
 
-INSERT INTO `producto` VALUES (1,'Monopatín Eléctrico xiaomi',100000,'2022-02-02','varchar','101'),
-(2,'Bicicleta Ducati R28',125646,'2022-12-12','','201'),
-(3,'Dragon Ball vol2 Ivrea',1000,'2022-12-14','','404'),
-(4,'Dragon Ball vol1 Ivrea',1000,'2022-12-14','','405'),
-(5,'asdf',3234230,'2022-12-14','','sadfa'),
-(6,'Monopatín Eléctrico xiaomi 2',123123,'2022-12-14','','123');
+INSERT INTO `producto` VALUES (1,'Microprocesador', 'Intel I5 10400', 35000, '2022-12-20','varchar','1013'),
+(2,'Fuente de Alimentación', 'Gygabyte 600W', 125646, '2022-12-20','','201'),
+(3,'Placa de Video', 'Nvidia EVGA RTX 3080 TI', 499000, '2022-12-21','','14'),
+(4,'Memoria RAM', 'Kingston DDR4 16GB', 22190,'2022-12-22','','5'),
+(5,'Teclado', 'HyperX Mecánico Alloy Origins', 32342, '2022-12-22','','387'),
+(6,'Disco Sólido', 'Kingston 1TB', 23123, '2022-12-14','','23'),
+(7,'Monitor', 'Samsung F24T35 LED 24"', 62500, '2022-12-22','','1321'),
+(8,'Motherboard', 'Asus X570 Amd', 53123, '2022-12-23','','2103');
 
 UNLOCK TABLES;

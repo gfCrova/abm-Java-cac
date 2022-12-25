@@ -20,6 +20,7 @@ public class CreateController extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 		String nombre = req.getParameter("nombre");
+		String modelo = req.getParameter("modelo");
 		String precio = req.getParameter("precio");
 		String imagen = req.getParameter("imagen");
 		String codigo = req.getParameter("codigo");
@@ -28,7 +29,7 @@ public class CreateController extends HttpServlet {
 		ProductoDAO dao = new ProductoDAO();
 		
 		//ejecutar el metodo crearProducto(parametros...)
-		dao.crearProducto(nombre, Float.parseFloat(precio), imagen, codigo);
+		dao.crearProducto(nombre, modelo,Float.parseFloat(precio), imagen, codigo);
 		
 		//ctrl+shit+o
 		//ir a la siguiente pagina

@@ -14,9 +14,10 @@
 				<section class="overflow-auto">
 					<table class="table mt-5 ps-4">
 					  <thead>
-					    <tr class="fs-4">
+					    <tr class="fs-5">
 					      <th scope="col">ID</th>
 					      <th scope="col">NOMBRE</th>
+						  <th scope="col">MODELO</th>
 					      <th scope="col">PRECIO</th>
 					      <th scope="col">C&Oacute;DIGO</th>
 					      <th scope="col">&nbsp;</th>
@@ -33,10 +34,11 @@
 					   <%
 					   	for( Producto  unProducto : listado) {
 					   %>
-					    <tr class="fs-4">
+					    <tr class="fs-5">
 					      <th scope="row" class="text-secondary"><em><%=unProducto.getIdProducto()%></em></th>
 					      <td><%=unProducto.getNombre() %></td>
-					      <td><%=unProducto.getPrecio() %></td>
+						  <td><%=unProducto.getModelo() %></td>
+					      <td><em><b>$</b></em> <%=unProducto.getPrecio() %></td>
 					      <td><i><%=unProducto.getCodigo() %></i></td>
 					      <td>
 					      	<a class="btn btn-danger" href="<%=request.getContextPath()%>/api/EliminarController?id=<%=unProducto.getIdProducto()%>" role="button">Eliminar</a> | 
