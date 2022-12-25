@@ -10,17 +10,21 @@
 			<div class="container mt-5 pt-5">
 				<h1 class="fs-1 text-center">DAR DE ALTA</h1>
 					<div class="row">
-						<div id="app" class="d-flex pt-5 mt-2 justify-content-center align-items-center">
+						<div id="app" class="d-flex pt-1 mt-2 justify-content-center align-items-center">
 							<div class="col-md-6 alta card p-1 shadow-lg">
 								<div class="card-header bg-danger bg-gradient">
-									<h4 class="text-align text-light">Agrega un producto</h4>
+									<h4 class="text-align text-light">Agrega un Componente</h4>
 								</div>
 								<div class="card-body p-2">
 									<form class="form-group" method="post"
 										action="<%=request.getContextPath()%>/CreateController">
 										<div class="mb-2 form-group">
 										<label for="exampleFormControlInput1" class="col-form-label-lg ml-1">Nombre</label>
-										<input name="nombre"  type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" maxlength="50">
+										<input name="nombre"  type="text" class="form-control" id="exampleFormControlInput1" placeholder="Monitor.., Placa.., etc.." maxlength="50">
+										</div>
+										<div class="mb-2 form-group">
+										<label for="exampleFormControlInput1" class="col-form-label-lg ml-1">Modelo</label>
+										<input name="modelo"  type="text" class="form-control" id="exampleFormControlInput1" placeholder="AMD radeon.." maxlength="50">
 										</div>
 										<div class="mb-2 form-group">
 										<label for="exampleFormControlTextarea1" class="col-form-label-lg ml-1">Precio</label>

@@ -36,18 +36,19 @@ public class ConsultarController extends HttpServlet {
 			//resultset
 			ResultSet rs = st.executeQuery(sql);
 			
-			if(rs.next()) {//¿hay datos?
+			if(rs.next()) {//ï¿½hay datos?
 				// rs > sacando los datos
 				Long idProducto = rs.getLong(1);//tomar la primer columna
 				String nombre = rs.getString(2);
-				Float precio = rs.getFloat(3);
-				Date fecha = rs.getDate(4);
-				String imagen = rs.getString(5);
-				String codigo = rs.getString(6);
+				String modelo = rs.getString(3);
+				Float precio = rs.getFloat(4);
+				Date fecha = rs.getDate(5);
+				String imagen = rs.getString(6);
+				String codigo = rs.getString(7);
 				
 				
 				//campos crear un objeto????
-				Producto prodFromDb = new Producto(idProducto,nombre,precio,fecha,imagen,codigo);
+				Producto prodFromDb = new Producto(idProducto,nombre,modelo,precio,fecha,imagen,codigo);
 				
 				//ir a otra pagina y ademas pasarle datos
 				

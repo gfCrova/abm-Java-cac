@@ -5,15 +5,17 @@ import java.util.Date;
 public class Producto {
 	private Long idProducto; 
 	private String nombre;
+	private String modelo;
 	private Float precio;
 	private Date fecha; 
 	private String imagen; 
 	private String codigo;
 	
-	public Producto(Long idProducto, String nombre, Float precio, Date fecha, String imagen, String codigo) {
+	public Producto(Long idProducto, String nombre, String modelo, Float precio, Date fecha, String imagen, String codigo) {
 		super();
 		this.idProducto = idProducto;
 		this.nombre = nombre;
+		this.modelo = modelo;
 		this.precio = precio;
 		this.fecha = fecha;
 		this.imagen = imagen;
@@ -34,6 +36,14 @@ public class Producto {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+
+	public String getModelo() {
+		return modelo;
+	}
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
 	}
 
 	public Float getPrecio() {
