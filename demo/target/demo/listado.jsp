@@ -5,7 +5,7 @@
 		<%@include file="head.jsp"%>	
 	</head>
 	
-	<body style="background: linear-gradient(90deg, rgba(155, 107, 5, 0.904), rgba(207, 162, 15, 0.911), rgba(235, 200, 84, 0.863), rgb(245, 230, 180), rgba(235, 200, 84, 0.863), rgba(207, 162, 15, 0.911), rgba(155, 107, 5, 0.904));">
+	<body style="background: linear-gradient(90deg, rgba(155, 108, 5, 0.685), rgba(207, 162, 15, 0.719), rgba(235, 200, 84, 0.719), rgba(245, 230, 180, 0.726), rgba(235, 200, 84, 0.726), rgba(207, 162, 15, 0.726), rgba(155, 108, 5, 0.74));">
 		<!-- ACA VA EL NAVBAR  -->
 		<%@include file="navbar.jsp" %>
 		<main class="mt-5 pt-5">

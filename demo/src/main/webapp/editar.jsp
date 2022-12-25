@@ -8,7 +8,7 @@
 		<main>
 			<!-- ACA VA EL NAVBAR  -->
 			<%@include file="navbar.jsp" %>
-			<div class="container">
+			<div class="container mt-5 pt-5">
 				<section>
 					<% 
 					  	Producto producto = (Producto)request.getAttribute("producto");
@@ -21,8 +21,14 @@
 						  <label for="exampleFormControlInput1" class="form-label">Nombre</label>
 						  <input name="nombre"
 						  	value="<%=producto.getNombre()%>"  
-						  	type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" maxlength="50">
+						  	type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre.." maxlength="50">
 						</div>
+						<div class="mb-3">
+							<label for="exampleFormControlInput1" class="form-label">Modelo</label>
+							<input name="modelo"
+							value="<%=producto.getModelo()%>"  
+							type="text" class="form-control" id="exampleFormControlInput1" placeholder="Modelo.." maxlength="50">
+						  </div>
 						<div class="mb-3">
 						  <label for="exampleFormControlTextarea1" class="form-label">Precio</label>
 						  <input name="precio"
