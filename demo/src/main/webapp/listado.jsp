@@ -16,7 +16,7 @@
 				<div class="row">
 					<div class="col-md">
 						<div class="table-responsive">
-							<table class="table table-hover mt-5">
+							<table class="table table-hover mt-5"
 								<thead class="table-dark">
 								  <tr>
 									<th scope="col">ID</th>
