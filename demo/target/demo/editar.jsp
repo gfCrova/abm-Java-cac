@@ -13,7 +13,9 @@
 					<% 
 					  	Producto producto = (Producto)request.getAttribute("producto");
 				  	%>
-					<h1>Editar producto ID=<%=producto.getIdProducto()%></h1>
+					  <div class="container-fluid py-3 bg-secondary bg-gradient shadow-lg">
+						<h1 class="text-center text-dark shadow-lg py-2" style="font-size: 2.5vw;">Editar producto "ID = <%=producto.getIdProducto()%>"</h1>
+					</div>
 					<!--  JSP -->
 					<form method="POST"
 						action="<%=request.getContextPath()%>/api/EditarController">
