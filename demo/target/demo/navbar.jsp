@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark bg-gradient fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark bg-gradient fixed-top" style="font-family: 'Montserrat', sans-serif;">
   <div class="container-fluid">
       <!--<img class="icon-cac" src="assets/img/codoacodo.png" alt="icon">-->
       <a class="navbar-brand" href="<%=request.getContextPath()%>">Codo a Codo</a>
