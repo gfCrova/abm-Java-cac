@@ -3,15 +3,17 @@
 		<%@include file="head.jsp" %>
 	</head>
 	
-	<body style="background: linear-gradient(90deg, rgba(148, 43, 1, 0.815), rgba(180, 90, 5, 0.788), rgba(211, 147, 51, 0.87), rgba(243, 215, 155, 0.925), rgba(211, 147, 51, 0.87), rgba(180, 90, 5, 0.788), rgba(148, 43, 1, 0.815));">
-		<main id="main-alta" class="mt-5 pt-5 pb-5" style="font-family: 'Montserrat', sans-serif; background-image: url(./assets/img/pngwing.com.png); background-size: auto; background-repeat: no-repeat;">
+	<body style="background: linear-gradient(90deg, rgb(0, 0, 0), rgba(27, 27, 27, 0.87), rgba(109, 47, 47, 0.788), rgba(131, 32, 32, 0.925), rgba(204, 63, 63, 0.836));">
+		<main id="main-alta" class="mt-5 py-3" style="font-family: 'Montserrat', sans-serif; background-image: url(./assets/img/pc2.png); background-size: contain; background-repeat: no-repeat; background-position-y: 5rem; background-position-x: left;">
 			<!-- ACA VA EL NAVBAR  -->
 			<%@include file="navbar.jsp" %>
+			<div class="bg-danger bg-gradient py-3 shadow-lg">
+				<h1 class="text-center text-light shadow-lg py-2" style="font-size: 2.5vw;">Dar de ALTA</h1>
+			</div>
 			<div class="container-fluid">
-				<h1 class="text-center fw-bold" style="font-size: 2.8vw;">Dar de ALTA</h1>
 					<div class="row">
-						<div id="app" class="d-flex pt-1 mt-4 pt-4 justify-content-center align-items-center">
-							<div class="col-md-6 card mx-3 border-4 border-light rounded-3 shadow-lg">
+						<div id="app" class="d-flex pt-1 mt-4 pt-4 justify-content-end align-items-end">
+							<div class="col-md-5 card mx-5 shadow-lg">
 								<div class="card-header bg-danger bg-gradient">
 									<h4 class="text-align text-light">Agrega un Componente</h4>
 								</div>

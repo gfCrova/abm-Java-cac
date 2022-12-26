@@ -5,17 +5,19 @@
 		<%@include file="head.jsp"%>	
 	</head>
 	
-	<body style="background: linear-gradient(90deg, rgb(190, 44, 7), rgb(216, 145, 12), rgba(194, 146, 42, 0.925), rgb(240, 211, 130), rgba(194, 146, 42, 0.925), rgb(216, 145, 12), rgb(190, 44, 7));">
+	<body style="background: linear-gradient(180deg, rgb(0,0,0), rgba(43, 40, 39, 0.822), rgb(160, 134, 85), rgba(233, 198, 123, 0.925), rgb(255, 229, 158));">
 		<!-- ACA VA EL NAVBAR  -->
 		<%@include file="navbar.jsp" %>
-		<main class="mt-5 pt-5" style="font-family: 'Montserrat', sans-serif;">
+		<main class="mt-5 py-3" style="font-family: 'Montserrat', sans-serif;">
+			<div class="container-fluid py-3 bg-secondary bg-gradient shadow-lg">
+				<h1 class="text-center text-dark shadow-lg py-2" style="font-size: 2.5vw;">Lista de Componentes</h1>
+			</div>
 			<div class="container">
-				<h1 class="fs-1 text-center">LISTADO</h1>
 				<div class="row">
 					<div class="col-md">
 						<div class="table-responsive">
 							<table class="table table-hover mt-5">
-								<thead class="bg-dark text-light">
+								<thead class="table-dark">
 								  <tr>
 									<th scope="col">ID</th>
 									<th scope="col">NOMBRE</th>
@@ -37,12 +39,12 @@
 									 for( Producto  unProducto : listado) {
 								 %>
 								  <tr>
-									<th scope="row" class="text-secondary table-light"><em> <%=unProducto.getIdProducto()%></em></th>
-									<td class="table-info"><%=unProducto.getNombre() %></td>
-									<td class="table-light"><%=unProducto.getModelo() %></td>
-									<td class="table-info"><em><b>$</b></em> <%=unProducto.getPrecio() %></td>
-									<td class="table-light"><i><%=unProducto.getCodigo() %></i></td>
-									<td class="table-info">
+									<th scope="row" class="text-warning table-dark"><em> <%=unProducto.getIdProducto()%></em></th>
+									<td class="table-secondary"><%=unProducto.getNombre() %></td>
+									<td class="table-dark"><%=unProducto.getModelo() %></td>
+									<td class="table-secondary"><em><b>$</b></em> <%=unProducto.getPrecio() %></td>
+									<td class="table-dark"><i><%=unProducto.getCodigo() %></i></td>
+									<td class="table-secondary">
 										<a class="btn btn-danger" href="<%=request.getContextPath()%>/api/EliminarController?id=<%=unProducto.getIdProducto()%>" role="button">Eliminar</a> | 
 										<a class="btn btn-secondary" href="<%=request.getContextPath()%>/api/EditarController?id=<%=unProducto.getIdProducto()%>" role="button">Editar</a>
 									</td>
