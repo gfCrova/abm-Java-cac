@@ -4,10 +4,10 @@
 	<%@include file="head.jsp" %>
 </head>
 
-<body style="background: linear-gradient(180deg, rgb(110, 4, 4), rgba(218, 8, 8, 0.795), rgb(240, 130, 130), rgba(255, 255, 255));">
+<body>
 	<!-- ACA VA EL NAVBAR  -->
 	<%@include file="navbar.jsp" %>
-		<main class="mt-5">
+		<main id="main-index" class="mt-5">
 
 			<div class="container-fluid text-center m-auto text-light mt-4">
 

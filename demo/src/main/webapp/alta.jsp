@@ -4,14 +4,14 @@
 	</head>
 	
 	<body style="background: linear-gradient(90deg, rgba(148, 43, 1, 0.815), rgba(180, 90, 5, 0.788), rgba(211, 147, 51, 0.87), rgba(243, 215, 155, 0.925), rgba(211, 147, 51, 0.87), rgba(180, 90, 5, 0.788), rgba(148, 43, 1, 0.815));">
-		<main>
+		<main id="main-alta" class="mt-5 pt-5 pb-5" style="font-family: 'Montserrat', sans-serif; background-image: url(./assets/img/laptop.png); background-size: contain; background-repeat: no-repeat;">
 			<!-- ACA VA EL NAVBAR  -->
 			<%@include file="navbar.jsp" %>
-			<div class="container mt-5 pt-5">
+			<div class="container-fluid">
 				<h1 class="fs-1 text-center">DAR DE ALTA</h1>
 					<div class="row">
-						<div id="app" class="d-flex pt-1 mt-5 pt-5 justify-content-center align-items-center">
-							<div class="col-md-6 alta card p-1 shadow-lg">
+						<div id="app" class="d-flex pt-1 mt-4 pt-4 justify-content-end align-items-end">
+							<div class="col-md-5 alta card mx-3 shadow-lg">
 								<div class="card-header bg-danger bg-gradient">
 									<h4 class="text-align text-light">Agrega un Componente</h4>
 								</div>
@@ -24,7 +24,7 @@
 										</div>
 										<div class="mb-2 form-group">
 										<label for="exampleFormControlInput1" class="col-form-label-lg ml-1">Modelo</label>
-										<input name="modelo"  type="text" class="form-control" id="exampleFormControlInput1" placeholder="AMD radeon.." maxlength="50">
+										<input name="modelo"  type="text" class="form-control" id="exampleFormControlInput1" placeholder="" maxlength="50">
 										</div>
 										<div class="mb-2 form-group">
 										<label for="exampleFormControlTextarea1" class="col-form-label-lg ml-1">Precio</label>
