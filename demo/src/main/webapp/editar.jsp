@@ -6,11 +6,11 @@
 	</head>
 
 	<body style="background: linear-gradient(180deg, rgb(0, 104, 9), rgba(43, 168, 70, 0.87), rgba(100, 184, 118, 0.842), rgb(200, 238, 203), rgb(255,255,255));">
-		<main class="mt-5 pt-2" style="background-image: url(./assets/img/codoacodo.png); background-size: contain; background-repeat: no-repeat;">
+		<main class="mt-5 py-3" style="background-image: url(./assets/img/codoacodo.png); background-size: contain; background-repeat: no-repeat;">
 			<!-- ACA VA EL NAVBAR  -->
 			<%@include file="navbar.jsp" %>
 			<% Producto producto=(Producto)request.getAttribute("producto"); %>
-				<div class="container-fluid py-2 bg-light bg-gradient shadow-lg">
+				<div class="container-fluid py-3 bg-light bg-gradient shadow-lg">
 					<h1 class="text-center text-dark shadow-lg py-2" style="font-size: 2.5vw;">Editar Componente <span class="text-success">"ID = <%=producto.getIdProducto()%>"</span></h1>
 				</div>
 				<div class="container">
