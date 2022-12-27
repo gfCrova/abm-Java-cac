@@ -6,7 +6,7 @@
 	</head>
 
 	<body>
-		<main class="mt-5" style="background: linear-gradient(90deg, rgba(148, 43, 1, 0.815), rgba(180, 90, 5, 0.788), rgba(211, 147, 51, 0.87), rgba(243, 215, 155, 0.925), rgba(211, 147, 51, 0.87), rgba(180, 90, 5, 0.788), rgba(148, 43, 1, 0.815));">
+		<main style="background: linear-gradient(90deg, rgba(148, 43, 1, 0.815), rgba(180, 90, 5, 0.788), rgba(211, 147, 51, 0.87), rgba(243, 215, 155, 0.925), rgba(211, 147, 51, 0.87), rgba(180, 90, 5, 0.788), rgba(148, 43, 1, 0.815));">
 
 			<!-- ACA VA EL NAVBAR  -->
 			<%@include file="navbar.jsp" %>
