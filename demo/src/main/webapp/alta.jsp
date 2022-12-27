@@ -3,7 +3,7 @@
 		<%@include file="head.jsp" %>
 	</head>
 	
-	<body style="background: linear-gradient(90deg, rgb(0, 0, 0), rgba(27, 27, 27, 0.87), rgba(109, 47, 47, 0.788), rgba(131, 32, 32, 0.925), rgba(204, 63, 63, 0.836));">
+	<body style="background: linear-gradient(90deg, rgb(0, 0, 0), rgba(17, 6, 6, 0.87), rgba(59, 8, 8, 0.829), rgba(148, 41, 41, 0.925), rgba(204, 63, 63, 0.836));">
 		<main id="main-alta" class="mt-5 py-3" style="font-family: 'Montserrat', sans-serif; background-image: url(./assets/img/pc2.png); background-size: contain; background-repeat: no-repeat; background-position-y: 5rem; background-position-x: left;">
 			<!-- ACA VA EL NAVBAR  -->
 			<%@include file="navbar.jsp" %>

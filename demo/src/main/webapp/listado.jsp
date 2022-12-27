@@ -5,18 +5,18 @@
 		<%@include file="head.jsp"%>	
 	</head>
 	
-	<body style="background: linear-gradient(180deg, rgb(0,0,0), rgba(43, 40, 39, 0.822), rgb(160, 134, 85), rgba(233, 198, 123, 0.925), rgb(255, 229, 158));">
+	<body style="background: linear-gradient(180deg, rgb(255, 255, 255), rgba(226, 214, 182, 0.822), rgb(255, 229, 158), rgba(233, 198, 123, 0.925), rgb(160, 134, 85));">
 		<!-- ACA VA EL NAVBAR  -->
 		<%@include file="navbar.jsp" %>
 		<main class="mt-5 py-3" style="font-family: 'Montserrat', sans-serif;">
-			<div class="container-fluid py-3 bg-secondary bg-gradient shadow-lg">
-				<h1 class="text-center text-dark shadow-lg py-2" style="font-size: 2.5vw;">Lista de Componentes</h1>
+			<div class="container-fluid py-3 bg-danger bg-gradient shadow-lg">
+				<h1 class="text-center text-light shadow-lg py-2" style="font-size: 2.5vw;">Lista de Componentes</h1>
 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md">
 						<div class="table-responsive">
-							<table class="table table-hover mt-5"
+							<table class="table table-hover mt-5">
 								<thead class="table-dark">
 								  <tr>
 									<th scope="col">ID</th>
