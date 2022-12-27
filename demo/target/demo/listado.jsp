@@ -56,12 +56,7 @@
 							  </table>
 						</div>
 					</div>
-<<<<<<< HEAD
 				</div>	
-						
-=======
-				</div>			
->>>>>>> ultimate_webapp
 			</div>
 		</main>
 	</body>	
