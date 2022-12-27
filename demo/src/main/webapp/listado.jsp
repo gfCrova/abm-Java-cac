@@ -5,6 +5,7 @@
 		<%@include file="head.jsp"%>	
 	</head>
 	
+<<<<<<< HEAD
 	<body style="background: linear-gradient(180deg, rgb(255, 255, 255), rgba(226, 214, 182, 0.822), rgb(255, 229, 158), rgba(233, 198, 123, 0.925), rgb(160, 134, 85));">
 		<!-- ACA VA EL NAVBAR  -->
 		<%@include file="navbar.jsp" %>
@@ -13,6 +14,14 @@
 				<h1 class="text-center text-light shadow-lg py-2" style="font-size: 2.5vw;">Lista de Componentes</h1>
 			</div>
 			<div class="container">
+=======
+	<body style="background: linear-gradient(180deg, rgb(110, 4, 4), rgba(218, 8, 8, 0.795), rgb(240, 130, 130), rgba(255, 255, 255));">
+		<!-- ACA VA EL NAVBAR  -->
+		<%@include file="navbar.jsp" %>
+		<main class="mt-5 pt-5">
+			<div class="container-fluid">
+				<h1 class="fs-1 text-center">LISTADO</h1>
+>>>>>>> ultimate_webapp
 				<div class="row">
 					<div class="col-md">
 						<div class="table-responsive">
@@ -56,8 +65,12 @@
 							  </table>
 						</div>
 					</div>
+<<<<<<< HEAD
 				</div>	
 						
+=======
+				</div>			
+>>>>>>> ultimate_webapp
 			</div>
 		</main>
 	</body>	
