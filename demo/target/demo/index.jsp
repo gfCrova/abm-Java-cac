@@ -25,21 +25,21 @@
 						</ol>
 						<div class="carousel-inner">
 						  <div class="carousel-item active">
-							<img class="first-slide img-fluid" src="./assets/img/motherboard.png" style="max-height: 600px;" alt="First slide">
+							<img class="first-slide img-fluid" src="./assets/img/motherboard.png" alt="First slide">
 							<div class="container">
 							  <div class="carousel-caption text-left">
 							  </div>
 							</div>
 						  </div>
 						  <div class="carousel-item">
-							<img class="second-slide img-fluid" src="./assets/img/gabinete.png" style="max-height: 600px;" alt="Second slide">
+							<img class="second-slide img-fluid" src="./assets/img/gabinete.png" alt="Second slide">
 							<div class="container">
 							  <div class="carousel-caption">
 							  </div>
 							</div>
 						  </div>
 						  <div class="carousel-item">
-							<img class="third-slide img-fluid" src="./assets/img/graphic card.png" style="max-height: 600px;" alt="Third slide">
+							<img class="third-slide img-fluid" src="./assets/img/graphic card.png" alt="Third slide">
 							<div class="container">
 							  <div class="carousel-caption text-right">
 							  </div>
@@ -62,7 +62,7 @@
 			<div class="container-fluid">
 				<div class="row d-flex justify-content-center align-items-center m-auto">
 					<div class="col">
-						<img class="img-fluid" src="./assets/img/marcas/amd.png" alt="AMD">
+						<img class="img-fluid" src="./assets/img/marcas/amd.png" alt="Amd">
 					</div>
 					<div class="col">
 						<img class="img-fluid" src="./assets/img/marcas/lg.png" alt="LG">
@@ -95,7 +95,6 @@
 		</main>
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

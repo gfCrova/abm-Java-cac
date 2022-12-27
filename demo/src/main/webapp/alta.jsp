@@ -3,12 +3,12 @@
 		<%@include file="head.jsp" %>
 	</head>
 	
-	<body style="background: linear-gradient(90deg, rgb(0, 0, 0), rgba(17, 6, 6, 0.87), rgba(59, 8, 8, 0.829), rgba(148, 41, 41, 0.925), rgba(204, 63, 63, 0.836));">
-		<main id="main-alta" class="mt-5 py-3" style="font-family: 'Montserrat', sans-serif; background-image: url(./assets/img/pc2.png); background-size: contain; background-repeat: no-repeat; background-position-y: 5rem; background-position-x: left;">
+	<body id="body-alta">
+		<main id="main-alta" class="mt-5 py-3">
 			<!-- ACA VA EL NAVBAR  -->
 			<%@include file="navbar.jsp" %>
 			<div class="bg-danger bg-gradient py-3 shadow-lg">
-				<h1 class="text-center text-light shadow-lg py-2" style="font-size: 2.5vw;">Dar de ALTA</h1>
+				<h1 id="h1-alta" class="text-center text-light shadow-lg py-2">Dar de ALTA</h1>
 			</div>
 			<div class="container-fluid">
 					<div class="row">
@@ -51,5 +51,11 @@
 					</div>
 			</div>
 		</main>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
 	</body>	
 </html>

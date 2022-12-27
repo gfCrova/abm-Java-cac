@@ -1,17 +1,18 @@
 <%@page import="ar.com.codoacodo.dto.Producto" %>
-	<html>
+
+<html>
 
 	<head>
 		<%@include file="head.jsp" %>
 	</head>
 
-	<body style="background: linear-gradient(180deg, rgb(0, 104, 9), rgba(43, 168, 70, 0.87), rgba(100, 184, 118, 0.842), rgb(200, 238, 203), rgb(255,255,255));">
-		<main class="mt-5 py-3" style="font-family: 'Montserrat', sans-serif; background-image: url(./assets/img/gabinete.png); background-size: cover; background-repeat: no-repeat; background-position-x: left;">
+	<body id="body-edit">
+		<main id="main-edit" class="mt-5 py-3">
 			<!-- ACA VA EL NAVBAR  -->
 			<%@include file="navbar.jsp" %>
 			<% Producto producto=(Producto)request.getAttribute("producto"); %>
 				<div class="container-fluid py-3 bg-light bg-gradient shadow-lg">
-					<h1 class="text-center text-dark shadow-lg py-2" style="font-size: 2.5vw;">Editar Componente</h1>
+					<h1 id="h1-edit" class="text-center text-dark shadow-lg py-2">Editar Componente</h1>
 				</div>
 				<div class="container">
 						<div class="row">
@@ -53,6 +54,12 @@
 						</div>
 				</div>
 		</main>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
 	</body>
 
 	</html>
