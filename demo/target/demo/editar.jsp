@@ -6,7 +6,7 @@
 		<%@include file="head.jsp" %>
 	</head>
 
-	<body id="body-edit">
+	<body id="body-edit" style="background: linear-gradient(180deg, rgb(255, 255, 255), rgba(226, 214, 182, 0.822), rgb(255, 229, 158), rgba(233, 198, 123, 0.925), rgb(160, 134, 85));">
 		<main id="main-edit" class="mt-5 py-3">
 			<!-- ACA VA EL NAVBAR  -->
 			<%@include file="navbar.jsp" %>

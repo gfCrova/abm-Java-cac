@@ -26,6 +26,7 @@ INSERT INTO `producto` VALUES (1,'Microprocesador', 'Intel I5 10400', 35000, '20
 (6,'Disco Sólido', 'Kingston 1TB', 23123, '2022-12-14','','23'),
 (7,'Monitor', 'Samsung F24T35 LED 24"', 62500, '2022-12-22','','1321'),
 (8,'Motherboard', 'Asus X570 Amd', 53123, '2022-12-23','','2103'),
-(9,'Microprocesador', 'AMD Ryzen 7 5700G', 82599, '2022-12-26', '42356');
+(9,'Microprocesador', 'AMD Ryzen 7 5700G', 82599, '2022-12-26', '', '42356'),
+(10,'Placa de Video', 'AMD Radeon RX 580', 95890, '2022-12-26', '','0076');
 
 UNLOCK TABLES;
