@@ -97,6 +97,7 @@ public class ProductoDAO {
 	}
 
 	/*crear un producto en la db*/
+
 	public void crearProducto(String nombre, String modelo, Float precio, String imagen, String codigo) {
 		
 		Connection con = AdministradorDeConexiones.getConnection();
@@ -104,7 +105,7 @@ public class ProductoDAO {
 		if(con != null) { 
 			// insert en la db > SQL: INSERT INTO....
 			String sql = "INSERT INTO PRODUCTO (nombre,modelo,precio,fecha_creacion,imagen,codigo) ";
-			sql += "VALUES('"+nombre+"','"+modelo+"',"+precio+",	CURRENT_DATE,'"+imagen+"','"+codigo+"')";
+			sql += "VALUES('"+nombre+"','"+modelo+"',"+precio+",CURRENT_DATE,'"+imagen+"','"+codigo+"')";
 			
 			//control de errores
 			try {
@@ -143,7 +144,7 @@ public class ProductoDAO {
 	
 	/*metodos del crud*/
 	public List<Producto> buscar(String clave) {
-		String sql = "SELECT * FROM PRODUCTO WHERE nombre LIKE '%"+clave+"%' ";
+		String sql = "SELECT * FROM PRODUCTO WHERE nombre LIKE '%"+clave+"%' OR modelo LIKE '%"+clave+"%' ";
 		
 		//Connection
 		Connection con = AdministradorDeConexiones.getConnection();
@@ -159,7 +160,7 @@ public class ProductoDAO {
 			
 			//VIENE UN SOLO REGISTRO!!!
 			
-			if(rs.next()) {//si existe, hay uno solo
+			while(rs.next()) {
 				// rs > sacando los datos
 				Long idProducto = rs.getLong(1);//tomar la primer columna
 				String nombre = rs.getString(2);

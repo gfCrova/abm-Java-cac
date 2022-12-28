@@ -25,7 +25,7 @@
 						</ol>
 						<div class="carousel-inner">
 						  <div class="carousel-item active">
-							<img class="first-slide img-fluid" src="./assets/img/motherboard.png" alt="First slide">
+							<img class="first-slide img-fluid" src="./assets/img/graphic card.png" alt="First slide">
 							<div class="container">
 							  <div class="carousel-caption text-left">
 							  </div>
@@ -39,7 +39,7 @@
 							</div>
 						  </div>
 						  <div class="carousel-item">
-							<img class="third-slide img-fluid" src="./assets/img/graphic card.png" alt="Third slide">
+							<img class="third-slide img-fluid" src="./assets/img/motherboard.png" alt="Third slide">
 							<div class="container">
 							  <div class="carousel-caption text-right">
 							  </div>
@@ -74,7 +74,7 @@
 						<img class="img-fluid" src="./assets/img/marcas/samsung.png" alt="samsung">
 					</div>
 					<div class="col">
-						<img class="img-fluid" src="./assets/img/marcas/apple.png" alt="APPLE">
+						<img class="img-fluid" src="./assets/img/marcas/ryzen.png" alt="RYZEN">
 					</div>
 					<div class="col">
 						<img class="img-fluid" src="./assets/img/marcas/evga.png" alt="EVGA">
