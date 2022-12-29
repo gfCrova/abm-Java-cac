@@ -34,7 +34,7 @@ public class EditarController extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-		String nombre = req.getParameter("nombre");
+		String componente = req.getParameter("componente");
 		String modelo = req.getParameter("modelo");
 		String precio = req.getParameter("precio");
 		String imagen = req.getParameter("imagen");
@@ -44,7 +44,7 @@ public class EditarController extends HttpServlet {
 		ProductoDAO dao = new ProductoDAO();
 		
 		//invocar actualizarProducto(params)
-		dao.actualizarProducto(nombre, modelo, precio, codigo);
+		dao.actualizarProducto(componente, modelo, precio, codigo);
 
 		//ir a la siguiente pagina
 		resp.sendRedirect(req.getContextPath()+"/api/ListadoController");
