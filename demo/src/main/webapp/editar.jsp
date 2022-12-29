@@ -41,7 +41,7 @@
 											</div>
 											<div class="mb-2 form-group">
 											<label for="exampleFormControlTextarea1" class="col-form-label-lg ml-1 fw-bold">C&oacute;digo</label>
-											<input name="codigo" value="<%=producto.getCodigo()%>" type="number" class="form-control" id="exampleFormControlTextarea1">
+											<input name="codigo" readonly="readonly" value="<%=producto.getCodigo()%>" type="text" class="form-control" id="exampleFormControlTextarea1" maxlength="7">
 											</div>
 											<div class="text-center">
 												<button class="btn btn-success btn-block w-100 fs-4 fw-bold text-light mt-2 p-3 shadow-lg" type="submit"><i class="bi bi-box-arrow-down"> Guardar</i>

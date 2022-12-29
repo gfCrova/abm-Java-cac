@@ -22,15 +22,15 @@
 										action="<%=request.getContextPath()%>/CreateController">
 										<div class="mb-2 form-group">
 										<label for="exampleFormControlInput1" class="col-form-label-lg ml-1">Nombre</label>
-										<input name="nombre"  type="text" class="form-control" id="exampleFormControlInput1" placeholder="ej: Placa.." maxlength="50">
+										<input name="nombre"  type="text" class="form-control" id="exampleFormControlInput1" placeholder="Placa.., Monitor.., etc.." maxlength="50">
 										</div>
 										<div class="mb-2 form-group">
 										<label for="exampleFormControlInput1" class="col-form-label-lg ml-1">Modelo</label>
-										<input name="modelo"  type="text" class="form-control" id="exampleFormControlInput1" placeholder="ej: Amd Radeon.. " maxlength="50">
+										<input name="modelo"  type="text" class="form-control" id="exampleFormControlInput1" placeholder="Amd Radeon.., Samsung LED 27.. " maxlength="50">
 										</div>
 										<div class="mb-2 form-group">
 										<label for="exampleFormControlTextarea1" class="col-form-label-lg ml-1">Precio</label>
-										<input name="precio" type="number" class="form-control" id="exampleFormControlTextarea1">
+										<input name="precio" type="number" class="form-control" id="exampleFormControlTextarea1" placeholder="0.00">
 										</div>
 										<div class="mb-2 form-group">
 										<label for="exampleFormControlTextarea1" class="col-form-label-lg ml-1">Im&aacute;gen (opcional)</label>
@@ -38,7 +38,7 @@
 										</div>
 										<div class="mb-2 form-group">
 										<label for="exampleFormControlTextarea1" class="col-form-label-lg ml-1">C&oacute;digo</label>
-										<input name="codigo" type="number" class="form-control" id="exampleFormControlTextarea1">
+										<input name="codigo" type="text" class="form-control" id="exampleFormControlTextarea1" maxlength="7">
 										</div>
 										<div class="text-center">
 											<button class="btn btn-danger btn-block w-100 fw-bold text-light mt-2 p-3 shadow-lg" type="submit"><i class="bi bi-plus-circle-fill"> ADD</i>

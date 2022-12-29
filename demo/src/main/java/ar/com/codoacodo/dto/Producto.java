@@ -9,9 +9,9 @@ public class Producto {
 	private Float precio;
 	private Date fecha; 
 	private String imagen; 
-	private int codigo;
+	private String codigo;
 	
-	public Producto(Long idProducto, String nombre, String modelo, Float precio, Date fecha, String imagen, int codigo) {
+	public Producto(Long idProducto, String nombre, String modelo, Float precio, Date fecha, String imagen, String codigo) {
 		super();
 		this.idProducto = idProducto;
 		this.nombre = nombre;
@@ -70,11 +70,11 @@ public class Producto {
 		this.imagen = imagen;
 	}
 
-	public int getCodigo() {
+	public String getCodigo() {
 		return codigo;
 	}
 
-	public void setCodigo(int codigo) {
+	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
 	

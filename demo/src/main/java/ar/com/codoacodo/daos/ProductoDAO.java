@@ -39,7 +39,7 @@ public class ProductoDAO {
 				Float precio = rs.getFloat(4);
 				Date fecha = rs.getDate(5);
 				String imagen = rs.getString(6);
-				int codigo = rs.getInt(7);
+				String codigo = rs.getString(7);
 				
 				//campos crear un objeto????
 				prodFromDb = new Producto(idProducto,nombre,modelo,precio,fecha,imagen,codigo);
@@ -78,7 +78,7 @@ public class ProductoDAO {
 				Float precio = rs.getFloat(4);
 				Date fecha = rs.getDate(5);
 				String imagen = rs.getString(6);
-				int codigo = rs.getInt(7);
+				String codigo = rs.getString(7);
 				
 				//campos crear un objeto????
 				Producto prodFromDb = new Producto(idProducto,nombre, modelo,precio,fecha,imagen,codigo);
@@ -98,7 +98,7 @@ public class ProductoDAO {
 
 	/*crear un producto en la db*/
 
-	public void crearProducto(String nombre, String modelo, Float precio, String imagen, int codigo) {
+	public void crearProducto(String nombre, String modelo, Float precio, String imagen, String codigo) {
 		
 		Connection con = AdministradorDeConexiones.getConnection();
 		
@@ -121,11 +121,11 @@ public class ProductoDAO {
 		}
 	}
 
-	public void actualizarProducto(String nombre, String modelo, String precio, int codigo) {
+	public void actualizarProducto(String codigo, String nombre, String modelo, String precio) {
 		Connection con = AdministradorDeConexiones.getConnection();
 		if(con != null) { 
 			String sql = "UPDATE PRODUCTO "
-					+ " SET nombre='"+nombre+"',"
+					+ " set nombre='"+nombre+"',"
 					+ " modelo='"+modelo+"',"
 					+ " precio='"+precio+"'"
 					+ " WHERE codigo = '"+codigo+"'"; 			
@@ -168,7 +168,7 @@ public class ProductoDAO {
 				Float precio = rs.getFloat(4);
 				Date fecha = rs.getDate(5);
 				String imagen = rs.getString(6);
-				int codigo = rs.getInt(7);
+				String codigo = rs.getString(7);
 				
 				//campos crear un objeto????
 				Producto prodFromDb = new Producto(idProducto,nombre,modelo,precio,fecha,imagen,codigo);
