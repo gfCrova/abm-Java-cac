@@ -13,7 +13,7 @@
 
 				<section class="row mt-5 pt-5">
 					<h1 class="fs-1">ABM de Productos</h1>
-					<p class="fs-3">Hardware</p>
+					<p class="fs-3">Componentes de PC</p>
 				</section>
 			
 				<section>

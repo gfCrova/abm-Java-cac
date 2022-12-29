@@ -12,7 +12,7 @@ background: linear-gradient(180deg, rgb(255, 255, 255), rgba(226, 214, 182, 0.82
 	<%@include file="navbar.jsp" %>
 	<main class="mt-5 py-3">
 		<div class="container-fluid py-3 bg-danger bg-gradient shadow-lg">
-			<h1 id="h1-listado" class="text-center text-light shadow-lg py-2">Lista de Componentes</h1>
+			<h1 id="h1-listado" class="text-center text-light shadow-lg py-2">Listado de Productos</h1>
 		</div>
 		<div class="container">
 			<div class="row">

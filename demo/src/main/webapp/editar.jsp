@@ -12,7 +12,7 @@
 			<%@include file="navbar.jsp" %>
 			<% Producto producto=(Producto)request.getAttribute("producto"); %>
 				<div class="container-fluid py-3 bg-light bg-gradient shadow-lg">
-					<h1 id="h1-edit" class="text-center text-dark shadow-lg py-2">Editar Componente</h1>
+					<h1 id="h1-edit" class="text-center text-dark shadow-lg py-2">Modificar los datos del Producto</h1>
 				</div>
 				<div class="container">
 						<div class="row">
@@ -24,7 +24,7 @@
 									<div class="card-body p-2">
 										<form class="form-group" method="POST" action="<%=request.getContextPath()%>/api/EditarController">
 											<div class="mb-2 form-group">
-											<label for="exampleFormControlInput1" class="col-form-label-lg ml-1 fw-bold">Nombre</label>
+											<label for="exampleFormControlInput1" class="col-form-label-lg ml-1 fw-bold">Componente</label>
 											<input name="componente" value="<%=producto.getComponente()%>" type="text" class="form-control" id="exampleFormControlInput1" maxlength="50">
 											</div>
 											<div class="mb-2 form-group">

@@ -15,7 +15,7 @@
 						<div id="app" class="d-flex pt-1 mt-4 pt-4 justify-content-end align-items-end">
 							<div class="col-md-5 card mx-5 shadow-lg">
 								<div class="card-header bg-danger bg-gradient">
-									<h4 class="text-align text-light">Agrega un Componente</h4>
+									<h4 class="text-align text-light">Ingresar los datos del producto</h4>
 								</div>
 								<div class="card-body p-2">
 									<form class="form-group" method="post"

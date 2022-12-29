@@ -21,15 +21,15 @@ public class CreateController extends HttpServlet {
 
 		String componente = req.getParameter("componente");
 		String modelo = req.getParameter("modelo");
-		String precio = req.getParameter("precio");
+		Float precio = Float.parseFloat(req.getParameter("precio"));
 		String imagen = req.getParameter("imagen");
-		String codigo = req.getParameter("codigo");
+		int codigo = Integer.parseInt(req.getParameter("codigo"));
 		
 		//crear ProductoDAO
 		ProductoDAO dao = new ProductoDAO();
 		
 		//ejecutar el metodo crearProducto(parametros...)
-		dao.crearProducto(componente, modelo, Float.parseFloat(precio), imagen, Integer.parseInt(codigo));
+		dao.crearProducto(componente, modelo, precio, imagen, codigo);
 		
 		//ctrl+shit+o
 		//ir a la siguiente pagina

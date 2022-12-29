@@ -15,14 +15,14 @@
 						<div id="app" class="d-flex pt-1 mt-4 pt-4 justify-content-end align-items-end">
 							<div class="col-md-5 card mx-5 shadow-lg">
 								<div class="card-header bg-danger bg-gradient">
-									<h4 class="text-align text-light">Agrega un Componente</h4>
+									<h4 class="text-align text-light">Ingresar los datos del producto</h4>
 								</div>
 								<div class="card-body p-2">
 									<form class="form-group" method="post"
 										action="<%=request.getContextPath()%>/CreateController">
 										<div class="mb-2 form-group">
 										<label for="exampleFormControlInput1" class="col-form-label-lg ml-1">Componente</label>
-										<input name="componente"  type="text" class="form-control" id="exampleFormControlInput1" placeholder="ej: Placa.." maxlength="50">
+										<input name="componente"  type="text" class="form-control" id="exampleFormControlInput1" placeholder="ej: Placa de Video.." maxlength="50">
 										</div>
 										<div class="mb-2 form-group">
 										<label for="exampleFormControlInput1" class="col-form-label-lg ml-1">Modelo</label>

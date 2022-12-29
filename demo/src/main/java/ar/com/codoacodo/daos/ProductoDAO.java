@@ -121,11 +121,11 @@ public class ProductoDAO {
 		}
 	}
 
-	public void actualizarProducto(String codigo, String componente, String modelo, String precio) {
+	public void actualizarProducto(String componente, String modelo, Float precio, int codigo) {
 		Connection con = AdministradorDeConexiones.getConnection();
 		if(con != null) { 
-			String sql = "UPDATE PRODUCTO "
-					+ " set componente='"+componente+"',"
+			String sql = "UPDATE producto "
+					+ " SET componente='"+componente+"',"
 					+ " modelo='"+modelo+"',"
 					+ " precio= "+precio
 					+ " WHERE codigo = "+codigo; 			

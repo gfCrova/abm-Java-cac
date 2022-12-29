@@ -36,9 +36,8 @@ public class EditarController extends HttpServlet {
 
 		String componente = req.getParameter("componente");
 		String modelo = req.getParameter("modelo");
-		String precio = req.getParameter("precio");
-		String imagen = req.getParameter("imagen");
-		String codigo = req.getParameter("codigo");
+		Float precio = Float.parseFloat(req.getParameter("precio"));
+		int codigo = Integer.parseInt(req.getParameter("codigo"));
 		
 		//Crear ProductoDAO
 		ProductoDAO dao = new ProductoDAO();
