@@ -38,13 +38,13 @@ public class ConsultarController extends HttpServlet {
 			
 			if(rs.next()) {//�hay datos?
 				// rs > sacando los datos
-				Long idProducto = rs.getLong(1);//tomar la primer columna
+				Long idProducto = rs.getLong(1);
 				String nombre = rs.getString(2);
 				String modelo = rs.getString(3);
 				Float precio = rs.getFloat(4);
 				Date fecha = rs.getDate(5);
 				String imagen = rs.getString(6);
-				String codigo = rs.getString(7);
+				int codigo = rs.getInt(7);
 				
 				
 				//campos crear un objeto????
