@@ -3,18 +3,18 @@ package ar.com.codoacodo.dto;
 import java.util.Date;
 
 public class Producto {
-	private Long idProducto; 
-	private String nombre;
+	private int idProducto; 
+	private String componente;
 	private String modelo;
 	private Float precio;
 	private Date fecha; 
 	private String imagen; 
-	private String codigo;
+	private int codigo;
 	
-	public Producto(Long idProducto, String nombre, String modelo, Float precio, Date fecha, String imagen, String codigo) {
+	public Producto(int idProducto, String componente, String modelo, Float precio, Date fecha, String imagen, int codigo) {
 		super();
 		this.idProducto = idProducto;
-		this.nombre = nombre;
+		this.componente = componente;
 		this.modelo = modelo;
 		this.precio = precio;
 		this.fecha = fecha;
@@ -22,20 +22,20 @@ public class Producto {
 		this.codigo = codigo;
 	}
 
-	public Long getIdProducto() {
+	public int getIdProducto() {
 		return idProducto;
 	}
 
-	public void setIdProducto(Long idProducto) {
+	public void setIdProducto(int idProducto) {
 		this.idProducto = idProducto;
 	}
 
-	public String getNombre() {
-		return nombre;
+	public String getComponente() {
+		return componente;
 	}
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setComponente(String componente) {
+		this.componente = componente;
 	}
 
 	public String getModelo() {
@@ -70,11 +70,11 @@ public class Producto {
 		this.imagen = imagen;
 	}
 
-	public String getCodigo() {
+	public int getCodigo() {
 		return codigo;
 	}
 
-	public void setCodigo(String codigo) {
+	public void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}
 	

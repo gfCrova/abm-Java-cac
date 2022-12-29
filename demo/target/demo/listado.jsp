@@ -22,7 +22,7 @@ background: linear-gradient(180deg, rgb(255, 255, 255), rgba(226, 214, 182, 0.82
 							<thead class="table-dark">
 								<tr>
 								<th scope="col">ID</th>
-								<th scope="col">NOMBRE</th>
+								<th scope="col">COMPONENTE</th>
 								<th scope="col">MODELO</th>
 								<th scope="col">PRECIO</th>
 								<th scope="col">C&Oacute;DIGO</th>
@@ -42,7 +42,7 @@ background: linear-gradient(180deg, rgb(255, 255, 255), rgba(226, 214, 182, 0.82
 								%>
 								<tr>
 								<th scope="row" class="text-warning table-dark"><em> <%=unProducto.getIdProducto()%></em></th>
-								<td class="table-secondary"><%=unProducto.getNombre() %></td>
+								<td class="table-secondary"><%=unProducto.getComponente() %></td>
 								<td class="table-dark"><%=unProducto.getModelo() %></td>
 								<td class="table-secondary"><em><b>$</b></em> <%=unProducto.getPrecio() %></td>
 								<td class="table-dark"><i><%=unProducto.getCodigo() %></i></td>

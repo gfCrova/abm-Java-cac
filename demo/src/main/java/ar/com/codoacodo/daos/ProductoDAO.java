@@ -33,16 +33,16 @@ public class ProductoDAO {
 			
 			if(rs.next()) {//si existe, hay uno solo
 				// rs > sacando los datos
-				Long idProducto = rs.getLong(1);//tomar la primer columna
-				String nombre = rs.getString(2);
+				int idProducto = rs.getInt(1);//tomar la primer columna
+				String componente = rs.getString(2);
 				String modelo = rs.getString(3);
 				Float precio = rs.getFloat(4);
 				Date fecha = rs.getDate(5);
 				String imagen = rs.getString(6);
-				String codigo = rs.getString(7);
+				int codigo = rs.getInt(7);
 				
 				//campos crear un objeto????
-				prodFromDb = new Producto(idProducto,nombre,modelo,precio,fecha,imagen,codigo);
+				prodFromDb = new Producto(idProducto,componente,modelo,precio,fecha,imagen,codigo);
 			}			
 		} catch (SQLException e) {
 			// ERRORES
@@ -54,7 +54,7 @@ public class ProductoDAO {
 
 	/*metodos del crud*/
 	public List<Producto> listarProductos() {
-		String sql = "SELECT * FROM PRODUCTO ";
+		String sql = "SELECT * FROM producto ";
 		
 		//Connection
 		Connection con = AdministradorDeConexiones.getConnection();
@@ -72,16 +72,16 @@ public class ProductoDAO {
 			
 			while(rs.next()) {//
 				// rs > sacando los datos
-				Long idProducto = rs.getLong(1);//tomar la primer columna
-				String nombre = rs.getString(2);
+				int idProducto = rs.getInt(1);//tomar la primer columna
+				String componente = rs.getString(2);
 				String modelo = rs.getString(3);
 				Float precio = rs.getFloat(4);
 				Date fecha = rs.getDate(5);
 				String imagen = rs.getString(6);
-				String codigo = rs.getString(7);
+				int codigo = rs.getInt(7);
 				
 				//campos crear un objeto????
-				Producto prodFromDb = new Producto(idProducto,nombre, modelo,precio,fecha,imagen,codigo);
+				Producto prodFromDb = new Producto(idProducto,componente, modelo,precio,fecha,imagen,codigo);
 				
 				//agrego a la lista 
 				list.add(prodFromDb);
@@ -98,14 +98,14 @@ public class ProductoDAO {
 
 	/*crear un producto en la db*/
 
-	public void crearProducto(String nombre, String modelo, Float precio, String imagen, String codigo) {
+	public void crearProducto(String componente, String modelo, Float precio, String imagen, int codigo) {
 		
 		Connection con = AdministradorDeConexiones.getConnection();
 		
 		if(con != null) { 
 			// insert en la db > SQL: INSERT INTO....
-			String sql = "INSERT INTO PRODUCTO (nombre,modelo,precio,fecha_creacion,imagen,codigo) ";
-			sql += "VALUES('"+nombre+"','"+modelo+"',"+precio+",CURRENT_DATE,'"+imagen+"','"+codigo+"')";
+			String sql = "INSERT INTO PRODUCTO (componente,modelo,precio,fecha_creacion,imagen,codigo) ";
+			sql += "VALUES('"+componente+"','"+modelo+"',"+precio+",CURRENT_DATE,'"+imagen+"','"+codigo+"')";
 			
 			//control de errores
 			try {
@@ -121,14 +121,14 @@ public class ProductoDAO {
 		}
 	}
 
-	public void actualizarProducto(String codigo, String nombre, String modelo, String precio) {
+	public void actualizarProducto(String codigo, String componente, String modelo, String precio) {
 		Connection con = AdministradorDeConexiones.getConnection();
 		if(con != null) { 
 			String sql = "UPDATE PRODUCTO "
-					+ " set nombre='"+nombre+"',"
+					+ " set componente='"+componente+"',"
 					+ " modelo='"+modelo+"',"
-					+ " precio='"+precio+"'"
-					+ " WHERE codigo = '"+codigo+"'"; 			
+					+ " precio= "+precio
+					+ " WHERE codigo = "+codigo; 			
 		
 			try {
 				Statement st = con.createStatement();			
@@ -144,7 +144,7 @@ public class ProductoDAO {
 	
 	/*metodos del crud*/
 	public List<Producto> buscar(String clave) {
-		String sql = "SELECT * FROM PRODUCTO WHERE nombre LIKE '%"+clave+"%' OR modelo LIKE '%"+clave+"%' ";
+		String sql = "SELECT * FROM PRODUCTO WHERE componente LIKE '%"+clave+"%' OR modelo LIKE '%"+clave+"%' ";
 		
 		//Connection
 		Connection con = AdministradorDeConexiones.getConnection();
@@ -162,16 +162,16 @@ public class ProductoDAO {
 			
 			while(rs.next()) {
 				// rs > sacando los datos
-				Long idProducto = rs.getLong(1);//tomar la primer columna
-				String nombre = rs.getString(2);
+				int idProducto = rs.getInt(1);//tomar la primer columna
+				String componente = rs.getString(2);
 				String modelo = rs.getString(3);
 				Float precio = rs.getFloat(4);
 				Date fecha = rs.getDate(5);
 				String imagen = rs.getString(6);
-				String codigo = rs.getString(7);
+				int codigo = rs.getInt(7);
 				
 				//campos crear un objeto????
-				Producto prodFromDb = new Producto(idProducto,nombre,modelo,precio,fecha,imagen,codigo);
+				Producto prodFromDb = new Producto(idProducto,componente,modelo,precio,fecha,imagen,codigo);
 				
 				listado.add(prodFromDb);
 			}			

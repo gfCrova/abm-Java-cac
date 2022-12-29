@@ -25,11 +25,11 @@
 										<form class="form-group" method="POST" action="<%=request.getContextPath()%>/api/EditarController">
 											<div class="mb-2 form-group">
 											<label for="exampleFormControlInput1" class="col-form-label-lg ml-1 fw-bold">Nombre</label>
-											<input name="nombre" value="<%=producto.getNombre()%>" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Monitor.., Placa.., etc.." maxlength="50">
+											<input name="componente" value="<%=producto.getComponente()%>" type="text" class="form-control" id="exampleFormControlInput1" maxlength="50">
 											</div>
 											<div class="mb-2 form-group">
 											<label for="exampleFormControlInput1" class="col-form-label-lg ml-1 fw-bold">Modelo</label>
-											<input name="modelo" value="<%=producto.getModelo()%>" type="text" class="form-control" id="exampleFormControlInput1" placeholder="AMD radeon.." maxlength="50">
+											<input name="modelo" value="<%=producto.getModelo()%>" type="text" class="form-control" id="exampleFormControlInput1" maxlength="50">
 											</div>
 											<div class="mb-2 form-group">
 											<label for="exampleFormControlTextarea1" class="col-form-label-lg ml-1 fw-bold">Precio</label>
@@ -41,7 +41,7 @@
 											</div>
 											<div class="mb-2 form-group">
 											<label for="exampleFormControlTextarea1" class="col-form-label-lg ml-1 fw-bold">C&oacute;digo</label>
-											<input name="codigo" readonly="readonly" value="<%=producto.getCodigo()%>" type="text" class="form-control" id="exampleFormControlTextarea1" maxlength="7">
+											<input name="codigo" value="<%=producto.getCodigo()%>" type="number" class="form-control" id="exampleFormControlTextarea1">
 											</div>
 											<div class="text-center">
 												<button class="btn btn-success btn-block w-100 fs-4 fw-bold text-light mt-2 p-3 shadow-lg" type="submit"><i class="bi bi-box-arrow-down"> Guardar</i>
