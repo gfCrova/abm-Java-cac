@@ -18,11 +18,15 @@
 						<div class="row">
 							<div class="d-flex pt-1 mt-4 pt-4 justify-content-center align-items-center">
 								<div class="col-md-6 alta card p-1 shadow-lg">
-									<div class="card-header bg-gradient">
+									<!--<div class="card-header bg-gradient">
 										<h1 class="text-dark text-center">ID = <span class="text-success"><%=producto.getIdProducto()%></span></h1>
-									</div>
+									</div>-->
 									<div class="card-body p-2">
 										<form class="form-group" method="POST" action="<%=request.getContextPath()%>/api/EditarController">
+											<div class="mb-2 p-2 form-group text-center bg-secondary bg-gradient">
+											<label for="exampleFormControlInput1" class="col-form-label-lg ml-1 text-light fw-bold">ID</label>
+											<input name="idProducto" value="<%=producto.getIdProducto()%>" readonly="readonly" type="number" class="form-control" id="exampleFormControlInput1">
+											</div>
 											<div class="mb-2 form-group">
 											<label for="exampleFormControlInput1" class="col-form-label-lg ml-1 fw-bold">Componente</label>
 											<input name="componente" value="<%=producto.getComponente()%>" type="text" class="form-control" id="exampleFormControlInput1" maxlength="50">
