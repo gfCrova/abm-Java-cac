@@ -25,7 +25,7 @@
 										<form class="form-group" method="POST" action="<%=request.getContextPath()%>/api/EditarController">
 											<div class="mb-2 p-2 form-group text-center bg-secondary bg-gradient d-flex gap-3">
 											<label for="exampleFormControlInput1" class="col-form-label-lg ml-1 text-light fw-bold w-50">ID</label>
-											<input name="idProducto" value="<%=producto.getIdProducto()%>" type="number" class="form-control w-50 text-center" id="exampleFormControlInput1" readonly disabled>
+											<input name="idProducto" value="<%=producto.getIdProducto()%>" type="number" class="form-control w-50 text-center" id="exampleFormControlInput1" readonly>
 											</div>
 											<div class="mb-2 form-group">
 											<label for="exampleFormControlInput1" class="col-form-label-lg ml-1 fw-bold">Componente</label>
