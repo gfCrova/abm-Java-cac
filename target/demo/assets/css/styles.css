@@ -1,0 +1,14 @@
+
+#main-index {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(180deg, rgb(110, 4, 4), rgba(218, 8, 8, 0.795), rgb(240, 130, 130), rgba(255, 255, 255));
+}
+
+#body-alta {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(90deg, rgb(0, 0, 0), rgba(17, 6, 6, 0.87), rgba(59, 8, 8, 0.829), rgba(148, 41, 41, 0.925), rgba(204, 63, 63, 0.836));
+}    
+
+#main-alta {
+    background-image: url(./assets/img/pc2.png); background-size: contain; background-repeat: no-repeat; background-position-y: 5rem; background-position-x: left;
+}
