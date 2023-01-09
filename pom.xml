@@ -89,7 +89,7 @@
     <repository>
       <id>github</id>
       <name>GitHub gfcrova Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/gfcrova/abm-Java-cac</url>
+      <url>https://maven.pkg.github.com/gfCrova/abm-Java-cac/target/demo.war</url>
     </repository>
   </distributionManagement>
 </project>
