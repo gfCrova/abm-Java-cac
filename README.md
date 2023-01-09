@@ -1,6 +1,6 @@
 # App CRUD de Productos
 
-### Proyecto Integrador Final cac
+### Proyecto Integrador Final
 
 <img src="https://maven.apache.org/images/maven-logo-black-on-white.png">
 
