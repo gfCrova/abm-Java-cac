@@ -84,4 +84,12 @@
       </plugins>
     </pluginManagement>
   </build>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub gfcrova Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/gfcrova/abm-Java-cac</url>
+    </repository>
+  </distributionManagement>
 </project>
