@@ -39,6 +39,7 @@ Esta programa te permite:
   </div>
 </div>
 
+<!--
 > <span>Conexión a base de datos <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/MySQL_logo.svg/100px-MySQL_logo.svg.png" alt="mysql" height="40"/></span>
 
 ``` xml
@@ -48,12 +49,13 @@ Esta programa te permite:
     <version>8.0.30</version>
 </dependency>
 ```
+-->
+<a href="https://www.oracle.com/ar/java/technologies/downloads/" target="_blank">Java</a> |
+<a href="https://junit.org/junit4/" target="_blank">JUnit 4</a> |
+<a href="https://maven.apache.org/archetypes/maven-archetype-webapp/" target="_blank">Apache Maven Proyect<a/> |
+<a href="https://www.apache.org/" target="_blank">Apache.org<a/>
 
-- <a href="https://junit.org/junit4/" target="_blank">JUnit 4</a>
-- <a href="https://maven.apache.org/archetypes/maven-archetype-webapp/" target="_blank">Apache Maven Proyect<a/>
-- <a href="https://www.apache.org/" target="_blank">Apache.org<a/>
 
-
-<p>Creado bajo <a href="https://github.com/gfCrova/abm-Java-cac/blob/main/LICENSE.md">Licencia MIT</a></p>
+> <p>Creado bajo <a href="https://github.com/gfCrova/abm-Java-cac/blob/main/LICENSE.md">Licencia MIT</a></p>
 
 <p>&copy Gian Franco Crova 2023</p>
