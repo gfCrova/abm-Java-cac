@@ -24,7 +24,7 @@ Esta programa te permite:
 - `Java V19.0.1` | `Apache Tomcat V9.0` | `Servlet V4.0` | `Servlet JSP V2.3` | `MySQL V8.0.30` | `JUnit V4.11` | `HTML5` | `CSS3` | `Bootstrap V5`
 - Plugins `Maven clean V3.1` | `Maven resources V3.1` | `Maven compiler V3.8` | `Maven sufire V2.22` | `Maven War V3.2` | `Maven install V2.5` | `Maven deploy V2.8`
 
-<img src="https://maven.apache.org/images/maven-logo-black-on-white.png" width="100" height="40">
+<!--<img src="https://maven.apache.org/images/maven-logo-black-on-white.png" width="100" height="40">-->
 
 <div align="center">
   <div align="left" >
