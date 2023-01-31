@@ -11,7 +11,6 @@ Esta programa te permite:
 - 💫 Editar/Actualizar
 - ❌ Eliminar
 </p>
-
 <div>
   <img src="https://user-images.githubusercontent.com/103906625/212483615-3b2e12a1-b7fe-4e82-861f-13df875fe440.jpeg" width="500"/>
   <img src="https://user-images.githubusercontent.com/103906625/212483657-a2525d85-3989-4e5b-86e9-48afcd69712f.jpeg" width="500"/>
