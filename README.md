@@ -54,6 +54,4 @@ Esta programa te permite:
 <a href="https://www.apache.org/" target="_blank">Apache.org<a/>
 
 
-> <p>Creado bajo <a href="https://github.com/gfCrova/abm-Java-cac/blob/main/LICENSE.md">Licencia MIT</a></p>
-
-<p>&copy Gian Franco Crova 2023</p>
+> <p>Creado bajo Licencia MIT</p>
